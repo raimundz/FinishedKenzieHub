@@ -1,0 +1,112 @@
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* modal */
+
+.modalTopContent {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  background-color: #343b41;
+
+  margin: 0;
+  padding: 0;
+}
+.modalTopText {
+  margin-left: 20px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.688rem;
+  line-height: 1.188rem;
+  color: white;
+}
+.buttonCloseModal {
+  border: none;
+  background-color: #343b41;
+  color: white;
+}
+.formModal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.inputAddTech {
+  display: block;
+  width: 100%;
+  height: 40px;
+  color: white;
+  background-color: #343b41;
+  margin-bottom: 21px;
+  border-radius: 4px;
+  padding-left: 0;
+  padding-right: 0;
+}
+.addTechLabel {
+  display: flex;
+  color: #f8f9fa;
+  flex-direction: column;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.625rem;
+  line-height: 20px;
+  color: white;
+  width: 90%;
+}
+.addTechSubmit {
+  border: none;
+  background-color: #ff577f;
+  color: white;
+  border-radius: 4px;
+  width: 90%;
+  height: 39px;
+}
+.errorMessage {
+  color: red;
+  margin: 0;
+}
